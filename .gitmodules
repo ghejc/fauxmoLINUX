@@ -1,0 +1,3 @@
+[submodule "async-sockets-cpp"]
+	path = async-sockets-cpp
+	url = https://github.com/eminfedar/async-sockets-cpp.git
