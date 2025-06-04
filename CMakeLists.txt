@@ -6,7 +6,9 @@ set(CMAKE_LIBRARY_PATH /usr/lib/arm-linux-gnueabihf)
 
 # Using GCC 7.1 or later, you can safely ignore the warning
 # "parameter passing for X changed in GCC 7.1"
+if(LINUX)
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-psabi")
+endif()
 
 add_executable(fauxmoLINUX src/fauxmoLINUX.cpp src/remote_control.cpp)
 
