@@ -21,7 +21,7 @@ find_library(NAMES crypto)
 target_link_libraries(fauxmoLINUX crypto)
 
 # Add -I../async-sockets
-target_include_directories(fauxmoLINUX PUBLIC ./src ./async-sockets-cpp/async-sockets/include ./json/include)
+target_include_directories(fauxmoLINUX PUBLIC ./src ./async-sockets-cpp/async-sockets/include)
 
 # Add boost libraries
 set(Boost_USE_STATIC_LIBS OFF) 
